@@ -33,7 +33,7 @@ figure {
   margin-bottom: 0px;
 }
 .container {
-  width: 1200px;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   /* background-color: brown; */
@@ -42,14 +42,22 @@ figure {
 /* ESSENTIAL */
 .manu-1 {
   background-color: #54397e;
+  text-align: right;
 }
 .manu-1 ul {
   display: flex;
+  margin-right: auto;
+  /* justify-content: flex-end; */
 }
 .manu-1 ul li {
   box-sizing: border-box;
-  border-right: 1px solid grey;
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 0 0 rgb(255 255 255 / 10%);
 }
+/* .manu-1 ul li:last-child {
+  border-right: none;
+  box-shadow: none;
+} */
 .manu-1 ul a {
   color: white;
   height: 42px;
