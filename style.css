@@ -1,0 +1,64 @@
+/* all fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+ul,
+ol {
+  list-style: none;
+}
+a,
+a:hover {
+  text-decoration: none;
+}
+img {
+  vertical-align: middle;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+ul,
+li,
+p,
+address,
+figcaption,
+figure {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  /* background-color: brown; */
+}
+
+/* ESSENTIAL */
+.manu-1 {
+  background-color: #54397e;
+}
+.manu-1 ul {
+  display: flex;
+}
+.manu-1 ul li {
+  box-sizing: border-box;
+  border-right: 1px solid grey;
+}
+.manu-1 ul a {
+  color: white;
+  height: 42px;
+  display: inline-block;
+  padding-top: 24px;
+  font-size: 15px;
+  padding: 24px 10px 0px 10px;
+  font-family: "Roboto", sans-serif;
+}
+.manu-1 ul a:hover {
+  background: #4b3371;
+}
