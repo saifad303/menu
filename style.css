@@ -1,6 +1,7 @@
 /* all fonts */
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap");
+/* ///// */
 * {
   margin: 0px;
   padding: 0px;
@@ -34,9 +35,11 @@ figure {
 }
 .container {
   max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   /* background-color: brown; */
+}
+.clr {
+  clear: both;
 }
 
 /* ESSENTIAL */
@@ -69,4 +72,64 @@ figure {
 }
 .manu-1 ul a:hover {
   background: #4b3371;
+}
+/* menu-1 end */
+.menu-2 .brand {
+  display: inline-block;
+}
+.menu-2 .menu {
+  display: inline-block;
+  margin-left: 33%;
+}
+.menu-2 .menu ul {
+  display: flex;
+}
+.menu-2 .menu ul li a {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  padding: 0 19px;
+  line-height: 76px;
+  position: relative;
+}
+.menu-2 .menu ul li {
+  position: relative;
+}
+.menu-2 .menu ul li::after {
+  position: absolute;
+  top: 95%;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  background-color: blue;
+  content: "";
+  transition: all linear 0.3s;
+}
+.menu-2 .menu ul li:hover::after {
+  position: absolute;
+  top: 95%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: blue;
+  content: "";
+}
+.menu-2 .brand h1 {
+  font-family: sans-serif;
+  font-weight: 400;
+  font-size: 27px;
+  line-height: 76px;
+  color: white;
+}
+.menu-2 .brand {
+  background-color: blue;
+  position: relative;
+}
+.menu-2 .brand::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -600000px;
+  right: 100%;
+  background-color: blue;
 }
